@@ -2428,6 +2428,10 @@ textarea.form-control {
     width: 6%;
   }
 
+  .carousel-caption h1{
+    font-size: 50px;
+  }
+
   .header_contact .contact p.number {
     font-size: 15px;
   }
@@ -2716,7 +2720,7 @@ textarea.form-control {
     top: 3px;
     left: 10px;
     border-right: 1px solid #6c757d66;
-    width: 10%;
+    width: 8%;
   }
 
   /* Styles */
@@ -2766,7 +2770,13 @@ textarea.form-control {
   .contact_form button {
 
     padding: 4px;
+   
+        background: transparent;
+    color: #fff;
     font-size: 18px;
+    font-weight: 400;
+    border: 1px solid;
+    cursor: pointer;
 
   }
 
