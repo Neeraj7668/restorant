@@ -1577,6 +1577,10 @@ textarea.form-control {
   border-radius: 0px;
 }
 
+.mini_bambini{
+  padding-left: 4rem;
+}
+
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 
@@ -2501,6 +2505,9 @@ textarea.form-control {
   .testimonials_section {
     height: 490px;
   }
+  .mini_bambini {
+    padding-left: 2rem;
+}
 
   .carousel-caption {
     bottom: 7rem;
