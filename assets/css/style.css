@@ -1577,7 +1577,7 @@ textarea.form-control {
   border-radius: 0px;
 }
 
-.mini_bambini{
+.mini_bambini {
   padding-left: 4rem;
 }
 
@@ -2428,11 +2428,57 @@ textarea.form-control {
 }
 
 @media only screen and (max-width:767px) {
+  .mini_bambini {
+    padding-left: 15px;
+  }
+
+  /* .menu_banner {
+    background: url(../images/menu_page_banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    line-height: 200px;
+  }
+
+  .contact_us {
+    background: url(../images/contact-us-slice/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    line-height: 200px;
+  }
+
+  .gallery_img_banner {
+    background: url(../images/gallery-slice/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    line-height: 200px;
+
+  }
+
+  .menu_banner {
+    background: url(../images/menu_page_banner.png);
+
+  } */
+
+  .sec_content {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    line-height: 200px;
+  }
+
   .home_form.contact_form .form-group span {
     width: 6%;
   }
 
-  .carousel-caption h1{
+  .carousel-caption h1 {
     font-size: 50px;
   }
 
@@ -2505,9 +2551,7 @@ textarea.form-control {
   .testimonials_section {
     height: 490px;
   }
-  .mini_bambini {
-    padding-left: 2rem;
-}
+
 
   .carousel-caption {
     bottom: 7rem;
@@ -2777,8 +2821,8 @@ textarea.form-control {
   .contact_form button {
 
     padding: 4px;
-   
-        background: transparent;
+
+    background: transparent;
     color: #fff;
     font-size: 18px;
     font-weight: 400;
