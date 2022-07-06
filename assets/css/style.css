@@ -688,7 +688,7 @@ a.banner_view_menu_btn {
   height: 80px;
 }
 
-.top_review .top_review_inner a {
+.top_review .top_review_inner .top_review_link {
   text-decoration: none;
   background-color: #e9b61c;
   color: #fff;
@@ -2667,7 +2667,7 @@ textarea.form-control {
   }
 
 
-  .top_review .top_review_inner a {
+  .top_review .top_review_inner .top_review_link {
 
     padding: 5px 10px;
     font-size: 14px;
