@@ -87,3 +87,7 @@ $(document).ready(function ($) {
     },
   });
 });
+
+const openEmail = () => {
+  window.location.href = "mailto:restaurant@salvador.co.nz";
+};
