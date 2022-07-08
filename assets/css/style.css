@@ -1581,6 +1581,11 @@ textarea.form-control {
   padding-left: 4rem;
 }
 
+
+.appetisers_menu_mobile{
+  display: none;
+}
+
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 
@@ -2098,6 +2103,13 @@ textarea.form-control {
     position: relative;
 
   }
+
+    .appetisers_menu_desktop {
+  display: none;
+}
+  .appetisers_menu_mobile{
+  display: inline-block;
+}
 
   .contact_form .form-group span {
     position: absolute;
