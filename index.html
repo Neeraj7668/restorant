@@ -34,7 +34,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="clearLocalStorage()">
   <!-- Top Header section start -->
 
   <div class="container-fluid mt-3 top_header_section">
@@ -247,7 +247,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
                 <div class="left_menu">
-                  <a href="menu.html">
+                  <a href="menu.html" id="antipasti">
                     <img src="assets/images/antipasti.png" alt="" srcset="" class="left_menu_img" data-aos="zoom-in"
                       data-aos="fade-up" data-aos-anchor-placement="top-bottom" offset=" 200" duration="600"
                       easing="ease-in">
@@ -271,7 +271,7 @@
 
               <div class="col-lg-4 col-md-12 col-12 col-12 d_set">
                 <div class="first_menu">
-                  <a href="menu.html">
+                  <a href="menu.html" id="pasta">
                     <img src="assets/images/pasta.png" alt="" srcset="" data-aos="zoom-out" data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom" offset=" 200" duration="700" easing="ease-in" />
                   </a>
@@ -293,7 +293,7 @@
                   </div>
                 </div>
                 <div class="second_menu">
-                  <a href="menu.html">
+                  <a href="menu.html" id="secondi">
                     <img src="assets/images/secondi.png" alt="" srcset="" data-aos="zoom-in" data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom" offset=" 200" duration="800" easing="ease-in" />
 
@@ -319,7 +319,7 @@
 
               <div class="col-lg-4 col-md-12 col-12 col-12 d_set">
                 <div class="first_menu">
-                  <a href="menu.html">
+                  <a href="menu.html" id="pizza">
                     <img src="assets/images/pizza.png" alt="" srcset="" data-aos="fade-up" data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom" offset=" 200" duration="900" easing="ease-in" />
                   </a>
@@ -341,7 +341,7 @@
                   </div>
                 </div>
                 <div class="second_menu">
-                  <a href="menu.html">
+                  <a href="menu.html" id="dolci">
                     <img src="assets/images/dolci.png" alt="" srcset="" data-aos="fade-flip" data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom" offset=" 200" duration="600" easing="ease-in" />
 

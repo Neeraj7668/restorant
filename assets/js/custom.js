@@ -91,3 +91,39 @@ $(document).ready(function ($) {
 const openEmail = () => {
   window.location.href = "mailto:restaurant@salvador.co.nz";
 };
+
+$(document).ready(function () {
+  $("#pizza").click(function () {
+    localStorage.setItem("menuName", "menu_pizza");
+  });
+
+  $("#antipasti").click(function () {
+    localStorage.setItem("menuName", "menu_antipasti");
+  });
+
+  $("#pasta").click(function () {
+    localStorage.setItem("menuName", "menu_pasta");
+  });
+
+  $("#secondi").click(function () {
+    localStorage.setItem("menuName", "menu_secondi");
+  });
+
+  $("#dolci").click(function () {
+    localStorage.setItem("menuName", "menu_dolci");
+  });
+
+  // Handler for .ready() called.
+
+  var menuName = localStorage.getItem("menuName");
+  $("html, body").animate(
+    {
+      scrollTop: $("#" + menuName).offset().top,
+    },
+    "slow"
+  );
+});
+
+const clearLocalStorage = () => {
+  localStorage.clear();
+};
