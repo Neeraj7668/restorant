@@ -144,6 +144,7 @@ const sendMail = () => {
   }).then((message) => {
     if (message == "OK") {
       alert("Your email has been send. Thank you!");
+      window.location.reload();
     } else {
       console.log(message);
       alert("There was an error sending your email. Please try again later.");
