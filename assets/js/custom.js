@@ -127,3 +127,26 @@ $(document).ready(function () {
 const clearLocalStorage = () => {
   localStorage.clear();
 };
+
+const sendMail = () => {
+  const name = document.getElementById("name").value;
+  const lastName = document.getElementById("lastName").value;
+  const email = document.getElementById("email").value;
+  const phoneNumber = document.getElementById("phoneNumber").value;
+  const message = document.getElementById("message").value;
+
+  Email.send({
+    SecureToken: "4f0ab8d3-759c-4f9b-8582-e467a1468b50",
+    To: "Salvador.Italian@gmail.com",
+    From: "Salvador.Italian@gmail.com",
+    Subject: `New Mail on contact form from ${name} ${lastName}`,
+    Body: `I'm ${name} ${lastName}. <br> My phone number is: ${phoneNumber}. Email is: ${email}.<br> ${message}`,
+  }).then((message) => {
+    if (message == "OK") {
+      alert("Your email has been send. Thank you!");
+    } else {
+      console.log(message);
+      alert("There was an error sending your email. Please try again later.");
+    }
+  });
+};

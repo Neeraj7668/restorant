@@ -27,6 +27,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Salve Dou</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -197,14 +198,13 @@
                                 <div class="form-group">
                                     <span><i class="fa fa-user" aria-hidden="true"></i> </span>
 
-                                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
+                                    <input type="text" class="form-control" id="lastName" aria-describedby="nameHelp"
                                         placeholder="Last name" />
                                 </div>
 
                                 <div class="form-group">
                                     <span><i class="fa fa-envelope" aria-hidden="true"></i> </span>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Email" />
+                                    <input type="email" class="form-control" id="email" placeholder="Email" />
                                 </div>
                                 <div class="form-group">
                                     <span><i class="fa fa-phone" aria-hidden="true"></i> </span>
@@ -216,13 +216,13 @@
                             <div class="col-12 col-md-12 col-lg-6">
                                 <div class="form-group">
                                     <span><i class="fa fa-pencil"></i> </span>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
+                                    <textarea class="form-control" id="message" rows="7"
                                         placeholder="Message"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
                                 <div class="text-center submit_form">
-                                    <a href="#" class="contact_submit_btn">Submit</a>
+                                    <a href="#" class="contact_submit_btn" onclick="sendMail()">Submit</a>
                                 </div>
 
 
